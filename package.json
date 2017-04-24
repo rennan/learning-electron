@@ -1,8 +1,9 @@
 {
   "name": "learning-electron",
   "productName": "LearningElectron",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "My well-made app",
+  "main": "main.js",
   "license": "MIT",
   "repository": "jmtvms/learning-electron",
   "author": {
