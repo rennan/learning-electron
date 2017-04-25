@@ -3,77 +3,78 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Electron boilerplate</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-theme.css">
     <link rel="stylesheet" href="./node_modules/swiper/dist/css/swiper.css">
     <link rel="stylesheet" href="./index.css">
+
 </head>
 
 <body>
-    <!--
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-                <a class="navbar-brand" href="#">Learning Electron</a>
-            </div>
-            <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-    </div>
-    </nav>
-    -->
-
     <!-- Swiper -->
-    <div class="swiper-container">
+    <div class="swiper-container swiper-container-h">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
-            <div class="swiper-slide">Slide 10</div>
+            <div class="swiper-slide"><img src="resources/image/foto-1.jpg" alt="Bicicleta Caloi 29 - Aro 29 - Freio a Disco - Câmbios Shimano - 21 Marchas" class="img-responsive"></div>
+            <div class="swiper-slide text">
+                <h1>Bicicleta Caloi 29 - Aro 29 - Freio a Disco - Câmbios Shimano - 21 Marchas</h1>
+                <p>Fabricada em <strong>alumínio</strong>, a <strong>Bicicleta Caloi 29</strong> é voltada para aqueles que praticam <strong>Montain Bike</strong>.</p>
+                <p>Pedale de um jeito <strong>fácil</strong>, <strong>seguro </strong>e <strong>prazeroso </strong>nas trilhas com a<strong> Caloi Aro 29!</strong> Aproveite e compre!</p>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-container swiper-container-v">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="resources/image/foto-1.jpg" alt="Bicicleta Caloi 29 - Aro 29 - Freio a Disco - Câmbios Shimano - 21 Marchas" class="img-responsive"></div>
+                        <div class="swiper-slide"><img src="resources/image/foto-1.jpg" alt="Bicicleta Caloi 29 - Aro 29 - Freio a Disco - Câmbios Shimano - 21 Marchas" class="img-responsive"></div>
+                        <div class="swiper-slide"><img src="resources/image/foto-1.jpg" alt="Bicicleta Caloi 29 - Aro 29 - Freio a Disco - Câmbios Shimano - 21 Marchas" class="img-responsive"></div>
+                        <div class="swiper-slide"><img src="resources/image/foto-1.jpg" alt="Bicicleta Caloi 29 - Aro 29 - Freio a Disco - Câmbios Shimano - 21 Marchas" class="img-responsive"></div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-v"></div>
+                </div>
+            </div>
+            <div class="swiper-slide text">
+                <h1>Bicicleta Caloi 29 - Aro 29 - Freio a Disco - Câmbios Shimano - 21 Marchas</h1>
+                <p>Fabricada em <strong>alumínio</strong>, a <strong>Bicicleta Caloi 29</strong> é voltada para aqueles que praticam <strong>Montain Bike</strong>.</p>
+                <p>Pedale de um jeito <strong>fácil</strong>, <strong>seguro </strong>e <strong>prazeroso </strong>nas trilhas com a<strong> Caloi Aro 29!</strong> Aproveite e compre!</p>
+            </div>
+            <div class="swiper-slide"><img src="resources/image/foto-1.jpg" alt="Bicicleta Caloi 29 - Aro 29 - Freio a Disco - Câmbios Shimano - 21 Marchas" class="img-responsive"></div>
+            <div class="swiper-slide text">
+                <h1>Bicicleta Caloi 29 - Aro 29 - Freio a Disco - Câmbios Shimano - 21 Marchas</h1>
+                <p>Fabricada em <strong>alumínio</strong>, a <strong>Bicicleta Caloi 29</strong> é voltada para aqueles que praticam <strong>Montain Bike</strong>.</p>
+                <p>Pedale de um jeito <strong>fácil</strong>, <strong>seguro </strong>e <strong>prazeroso </strong>nas trilhas com a<strong> Caloi Aro 29!</strong> Aproveite e compre!</p>
+            </div>
         </div>
         <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev swiper-button-prev-h"></div>
+        <div class="swiper-button-next swiper-button-next-h"></div>
     </div>
-
-    <!--
-    <div class="container">
+</body>
 
 
-        <div class="starter-template">
-            <h1>Bootstrap starter template</h1>
-            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        </div>
+<script>
+    var jQuery = require('jquery');
+    window.$ = jQuery;
+    require('bootstrap');
+    require('swiper');
 
-    </div>
-    -->
-    <script>
-        var jQuery = require('jquery');
-        window.$ = jQuery;
-        require('bootstrap');
-        require('swiper');
+    var swiper = new Swiper('.swiper-container-h', {
+        pagination: '.swiper-pagination-h',
+        slidesPerView: 1,
+        slidesPerColumn: 2,
+        nextButton: '.swiper-button-next-h',
+        prevButton: '.swiper-button-prev-h',
+        paginationClickable: true,
+        spaceBetween: 0
+    });
 
-        var swiper = new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
-            paginationClickable: true
-        });
-    </script>
+    var swiperV = new Swiper('.swiper-container-v', {
+        pagination: '.swiper-pagination-v',
+        paginationClickable: true,
+        direction: 'vertical',
+        spaceBetween: 0
+    });
+</script>
 </body>
 
 </html>
