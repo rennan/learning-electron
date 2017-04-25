@@ -1,6 +1,6 @@
 # learning-electron
 
-> My slick app
+My app to learn Electron.
 
 
 ## Dev
